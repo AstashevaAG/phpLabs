@@ -1,0 +1,530 @@
+{
+  "tutorials": [
+    {
+      "surfaces": {
+        "in_app_panel": {
+          "name": "Выбор и изменение цветов",
+          "version": "2.0.2",
+          "image": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/d72711f0-8d89-11eb-8ba1-9fd1cdff3541/banner1.jpg",
+          "content": [
+            {
+              "description": "Мы будем использовать корректирующий слой для изменения цветов всего изображения.",
+              "key": "photoshop/how-to/in-app/select-and-change-colors-step-2",
+              "title": "Изменение цветов с помощью слоя «Цветовой тон/Насыщенность»",
+              "taskList": {
+                "tasks": [
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-2-task-1",
+                    "coachmark": {
+                      "content": "Щелкните значок «Новый корректирующий слой» и выберите «Цветовой тон/Насыщенность». ",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "adjs"
+                      },
+                      "type": "text",
+                      "key": "coachmark-1"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "make",
+                        "descriptor": {}
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-2-task-2",
+                    "coachmark": {
+                      "content": "Откройте меню «Все» и выберите «Желтые». Перетащите ползунок «Цветовой тон» влево примерно до значения –97. Это позволит сместить желтые оттенки ближе к розоватому. Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "properties",
+                        "viewID": "thrp"
+                      },
+                      "type": "text",
+                      "key": "coachmark-2"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-2-task-3",
+                    "coachmark": {
+                      "content": "Снова откройте то же раскрывающееся меню, выберите «Все», чтобы применить изменения ко всем цветам в изображении. Затем перетащите ползунок «Цветовой тон» вправо примерно до +30, чтобы добавить немного тепла в розовые оттенки. Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "properties",
+                        "viewID": "thrp"
+                      },
+                      "type": "text",
+                      "key": "coachmark-3"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  }
+                ]
+              }
+            },
+            {
+              "description": "Инвертируйте слой-маску, чтобы маска стала черной, а затем рисуйте на ней белым, чтобы на цветах проявилось изменение, внесенное с помощью корректирующего слоя «Цветовой тон/Насыщенность».",
+              "key": "photoshop/how-to/in-app/select-and-change-colors-step-3",
+              "title": "Использование слоя-маски, чтобы сделать цветы розовыми",
+              "taskList": {
+                "tasks": [
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-3-task-1",
+                    "coachmark": {
+                      "content": "Выберите «{1701}». Это инвертирует белую слой-маску для слоя «Цветовой тон/Насыщенность», сделав его черным. Предыдущие изменения окажутся скрыты черной маской.",
+                      "position": {
+                        "type": "appmenu",
+                        "name": "image"
+                      },
+                      "type": "text",
+                      "key": "coachmark-1"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "invokeCommand",
+                        "descriptor": {
+                          "commandID": 1701,
+                          "_isCommand": false,
+                          "kcanDispatchWhileModal": true
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-3-task-2",
+                    "coachmark": {
+                      "content": "Выберите {paintbrushTool}. Если он уже выбран, щелкните любой другой инструмент, а затем снова этот.",
+                      "position": {
+                        "type": "tool",
+                        "id": "paintbrushTool"
+                      },
+                      "type": "text",
+                      "key": "coachmark-2"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "select",
+                        "descriptor": {
+                          "null": {
+                            "_ref": "paintbrushTool"
+                          }
+                        }
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-3-task-3",
+                    "coachmark": {
+                      "content": "Выберите инструмент «Кисть», щелкните правой кнопкой мыши в любой точке холста и установите размер кисти приблизительно 35 пикселей и жесткость кисти 30 %. Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "canvas",
+                        "arrow": "top-left",
+                        "arrowOrientation": "vertical",
+                        "offset": {
+                          "left": "49%",
+                          "top": "63%"
+                        }
+                      },
+                      "type": "text",
+                      "key": "coachmark-3"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-3-task-4",
+                    "coachmark": {
+                      "content": "Щелкните черный и белый квадратики, чтобы задать цвета по умолчанию и сделать белый основным цветом. ",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "toolbar",
+                        "viewID": "rese"
+                      },
+                      "type": "text",
+                      "key": "coachmark-4"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "reset"
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-3-task-5",
+                    "coachmark": {
+                      "content": "Кистью закрасьте желтые цветы, чтобы проявить розовые оттенки, созданные с помощью корректирующего слоя «Цветовой тон/Насыщенность». Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "canvas",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "offset": {
+                          "left": "50%",
+                          "top": "50%"
+                        }
+                      },
+                      "type": "text",
+                      "key": "coachmark-5"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  }
+                ]
+              }
+            },
+            {
+              "description": "Мы сместим синие тона в фоне ближе к зеленому, под цвет глаз субъекта.",
+              "key": "photoshop/how-to/in-app/select-and-change-colors-step-4",
+              "title": "Изменение цвета фона",
+              "taskList": {
+                "tasks": [
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-4-task-1",
+                    "coachmark": {
+                      "content": "Щелкните значок «Новый корректирующий слой» и выберите «Цветовой тон/Насыщенность».",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "layers",
+                        "viewID": "adjs"
+                      },
+                      "type": "text",
+                      "key": "coachmark-1"
+                    },
+                    "successConditions": [
+                      {
+                        "event": "make",
+                        "descriptor": {}
+                      }
+                    ],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-4-task-2",
+                    "coachmark": {
+                      "content": "Откройте меню «Все» и выберите «Голубые». Перетащите ползунок «Цветовой тон» влево примерно до значения –34 и ползунок «Насыщенность» влево примерно до значения –33. Это позволит сместить желтые оттенки ближе к розоватому. Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "properties",
+                        "viewID": "thrp"
+                      },
+                      "type": "text",
+                      "key": "coachmark-2"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  },
+                  {
+                    "key": "photoshop/how-to/in-app/select-and-change-colors-step-4-task-3",
+                    "coachmark": {
+                      "content": "Еще раз откройте то же раскрывающееся меню и выберите «Все», чтобы применить изменения ко всем цветам в изображении. Переместите ползунок «Насыщенность» влево, примерно до значения –4, чтобы слегка уменьшить сочность цветов. Нажмите кнопку «{NEXT}», чтобы продолжить.",
+                      "position": {
+                        "type": "view",
+                        "arrow": "top-left",
+                        "arrowOrientation": "horizontal",
+                        "panel": "properties",
+                        "viewID": "thrp"
+                      },
+                      "type": "text",
+                      "key": "coachmark-3"
+                    },
+                    "successConditions": [],
+                    "type": "Step"
+                  }
+                ]
+              }
+            },
+            {
+              "key": "photoshop/how-to/in-app/select-and-change-colors-step-5",
+              "title": "Отлично! Вы научились изменять цвета с помощью корректирующего слоя «Цветовой тон/Насыщенность» и применять коррекцию к конкретным участкам изображения с помощью слоев-масок! ",
+              "fallbackTitle": "Отлично! Вы научились изменять цвета с помощью корректирующего слоя «Цветовой тон/Насыщенность» и применять коррекцию к конкретным участкам изображения с помощью слоев-масок! ",
+              "credit": "Белла Котак (Bella Kotak)"
+            }
+          ],
+          "client": "Learn",
+          "key": "photoshop/how-to/in-app/select-and-change-colors",
+          "landingStep": {
+            "description": "Узнайте, как использовать корректирующий слой «Цветовой тон/Насыщенность» и слои-маски для применения корректировки к конкретному участку.",
+            "image": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/d72711f0-8d89-11eb-8ba1-9fd1cdff3541/banner1.jpg",
+            "key": "step-1",
+            "title": "Выбор и изменение цветов",
+            "coachmark": {
+              "content": "Нажмите кнопку «{NEXT}», чтобы начать.",
+              "position": {
+                "type": "view",
+                "arrow": "top-right",
+                "arrowOrientation": "vertical",
+                "panel": "panelid.static.learn",
+                "viewID": "next"
+              },
+              "type": "text",
+              "key": "coachmarkKey"
+            }
+          },
+          "author": {
+            "name": "Bella Kotak",
+            "avatar": "https://utut-service.adobe.com/api/user/avatar/477B288F4967A367992015A8.jpg",
+            "bio": "https://utut-service.adobe.com/api/user/avatar/bio/477B288F4967A367992015A8.json",
+            "badge": "https://utut-service.adobe.com/api/user/avatar/badge/477B288F4967A367992015A8.svg"
+          },
+          "type": "Tutorial",
+          "locale": "ru_RU",
+          "template": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/d72711f0-8d89-11eb-8ba1-9fd1cdff3541/Select_and_change_colors.psdt"
+        },
+        "in_app_panels": {
+          "live": "1eb5f72b-7862-3d93-bd15-84e944f3fd44",
+          "versions": [
+            2
+          ]
+        },
+        "ids": {
+          "in_app_panels": {
+            "live": "1eb5f72b-7862-3d93-bd15-84e944f3fd44",
+            "versions": [
+              2
+            ]
+          }
+        }
+      },
+      "aem_id": "photoshop/how-to/in-app/select-and-change-colors",
+      "metadata": {
+        "formatVersion": "1.0",
+        "descriptions": {
+          "medium": "Узнайте, как использовать корректирующий слой «Цветовой тон/Насыщенность» и слои-маски для применения корректировки к конкретному участку.",
+          "short": "Узнайте, как использовать корректирующий слой «Цветовой тон/Насыщенность» и слои-маски для применения корректировки к конкретному участку.",
+          "long": "Узнайте, как использовать корректирующий слой «Цветовой тон/Насыщенность» и слои-маски для применения корректировки к конкретному участку."
+        },
+        "media_types": [
+          "HandsOn"
+        ],
+        "creative_fields": [
+          "photography",
+          "graphic-design"
+        ],
+        "application": {
+          "fi_code": "photoshop_cc",
+          "sap_code": "PHSP"
+        },
+        "locale": "ru_RU",
+        "images": {
+          "hero": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/d72711f0-8d89-11eb-8ba1-9fd1cdff3541/banner1.jpg",
+          "thumbnail": "https://cc-cdn.adobe.com/graceland/PHSP/en_US/2.0.0/d72711f0-8d89-11eb-8ba1-9fd1cdff3541/thumbnail1.jpg",
+          "heroPath": "assets/LCM-PHXS-22.0.1-ru_RU-5b890eab-8f7a-4b75-aa4c-b0c8a511b1ea.jpeg",
+          "thumbnailPath": "assets/LCM-PHXS-22.0.1-ru_RU-90faf9a3-1e8c-476a-9373-ced170289e8d.jpeg"
+        },
+        "title": "Выбор и изменение цветов",
+        "platforms": [
+          "in-app"
+        ],
+        "duration_in_seconds": "110",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+          "fi_code": [],
+          "sap_code": []
+        },
+        "level": "intermediate",
+        "stage": "practice",
+        "source": {
+          "third_party": false,
+          "label": "Adobe.com"
+        },
+        "topics": [
+          "Color",
+          "Enhancing color",
+          "Adjustment layer",
+          "Adjustments",
+          "Photo editing"
+        ],
+        "urls": {},
+        "taxonomy": {
+          "creative_fields": [
+            {
+              "archived": false,
+              "enName": "Photography",
+              "id": "f14741181f3c4b3b8b0218d8bbd24d3a",
+              "internalId": "photography",
+              "name": "Фотография",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Graphic design",
+              "id": "c42a4f725de6414facbd08326ec4cc7f",
+              "internalId": "graphic-design",
+              "name": "Графический дизайн",
+              "toolType": ""
+            }
+          ],
+          "tasks": [
+            {
+              "archived": false,
+              "enName": "Change color",
+              "id": "785ea207a5d34d9f9adbafcc930347b4",
+              "internalId": "change-color",
+              "name": "Изменение цветов",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Edit color",
+              "id": "9c80b0aa68c44db8b74681b683c6fb0b",
+              "internalId": "edit-color",
+              "name": "Редактировать цвет",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Paint on layer mask",
+              "id": "6aa76621b6cf47c7836327c5494c8cd2",
+              "internalId": "paint-on-layer-mask",
+              "name": "Закрасить слой-маску",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Adjust hue",
+              "id": "5256568c7f834139b35804843b257f29",
+              "internalId": "adjust-hue",
+              "name": "Настроить оттенок",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Adjust saturation",
+              "id": "cdc3598823184ec181a1e6b84bad32bb",
+              "internalId": "adjust-saturation",
+              "name": "Настроить насыщенность",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Paint with brush",
+              "id": "0c5148c552794e5a979a13622bc93833",
+              "internalId": "paint-with-brush",
+              "name": "Закрасить кистью",
+              "toolType": ""
+            }
+          ],
+          "tools": [
+            {
+              "archived": false,
+              "enName": "Layer > New Adjustment Layer > HueSaturation",
+              "id": "772a3b026ddf403e978c1c934298a89d",
+              "internalId": "layer-new-adjustment-layer-huesaturation",
+              "name": "Слои > Новый корректирующий слой > Цветовой тонНасыщенность",
+              "toolType": "menu"
+            },
+            {
+              "archived": false,
+              "enName": "Image > Adjustments > Invert",
+              "id": "0417428ba4ec4e248b56c92a7ede513e",
+              "internalId": "image-adjustments-invert",
+              "name": "Изображение > Коррекция > Инверсия",
+              "toolType": "menu"
+            },
+            {
+              "archived": false,
+              "enName": "Brush Options Bar",
+              "id": "e27891d099354d83a19399db1b6d770a",
+              "internalId": "brush-options-bar",
+              "name": "Панель параметров инструмента «Кисть»",
+              "toolType": "tool"
+            },
+            {
+              "archived": false,
+              "enName": "Brush Tool",
+              "id": "04d82e4abe2c4b05bb1a6ceebdd32e1e",
+              "internalId": "brush-tool",
+              "name": "Инструмент Кисть",
+              "toolType": "tool"
+            },
+            {
+              "archived": false,
+              "enName": "Switch Foreground and Background Colors",
+              "id": "0a4c91865b1f470397852d535a95ae41",
+              "internalId": "switch-foreground-and-background-colors",
+              "name": "Переключение цветов переднего и заднего планов",
+              "toolType": "tool"
+            }
+          ],
+          "topics": [
+            {
+              "archived": false,
+              "enName": "Color",
+              "id": "0b866e9c90384a2a8a4feefa187d13f4",
+              "internalId": "color",
+              "name": "Цвет",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Enhancing color",
+              "id": "5787885378d549d8a9049ba42a7702f3",
+              "internalId": "enhancing-color",
+              "name": "Улучшение цвета",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Adjustment layer",
+              "id": "bbd60fc356f44fffbfadab25190dca28",
+              "internalId": "adjustment-layer",
+              "name": "Корректирующий слой",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Adjustments",
+              "id": "8ab1e36558ab4a628cbea11845c30f7a",
+              "internalId": "adjustments",
+              "name": "Корректировки",
+              "toolType": ""
+            },
+            {
+              "archived": false,
+              "enName": "Photo editing",
+              "id": "5570cf02a98c48b785e3988baad592ad",
+              "internalId": "photo-editing",
+              "name": "Редактирование фотографий",
+              "toolType": ""
+            }
+          ]
+        }
+      },
+      "urls": {
+        "helpx": null,
+        "helpx_iframe": null
+      },
+      "created_on": "2022-03-03T23:09:50.366Z",
+      "modified_on": "2022-09-26T21:34:26.056Z",
+      "locale": "ru_RU",
+      "published_status": "live",
+      "tutorialUUID": "ee2191ee-74b5-393c-89ed-e0a963e94ed5",
+      "service_uuid": "ddd7642f-3bf5-389b-95d2-5e91520d47bc",
+      "version": 22
+    }
+  ],
+  "per_page": 50,
+  "page": 1,
+  "total_objects": 1
+}
+                                                                                                                                                                                                                                                                                         ���cǢ�Gt�>}z��b��Hlٲ%VnT�)�/_�F�@������@l�SO=���q|���͛�1�C0!x\+�b3��,���8��q
+�y�̙3���1V��ԔB��IUp0�q�СhT�K �c�o߾x�1�#D������Zsi���Ǐ���|��x�1}JQ�W�sA\$<�s��xO>|��υ�巺�1�{x?�>n�D~�B�^����P:�`׮]�~����� :��4C��� �N5��Xn%�/�]
+�D�R0$�!�b=Sw��H�s^��~X�u�@0k���tHZ�@+U�B�gR�Raj�Q�(�d�aYɪ!�b��hD!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B���B!RG�C!��#�!�B�ԑ�B!D��{��O?���a�˗/[Z������o���&6&��݋�RN�:ebcs��Y+������&66CCC���ٻwoi�:::,�˙ظ�����Ą�A6����N��h%���ěظLOO��Ԕ�Je3��Ƈ2���\�E�B!D�P�B!RG�C!��#�!�B�ԑ�B!D�Hp!�"u$8�B�:B!�H	!�B�Β��L�MMM���-��X�����Ϯ�n!�B<z�;�I�a/���    IEND�B`�

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass&display=swap");
+
+
+.body{
+    /* background-color: #f5ffff; */
+    background-color: rgb(238, 238, 238);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    max-height: 100%;
+    height: 100vh;
+
+    position: relative;
+	min-height: 100%;
+}
+
+
+/* Tegs */
+
+a {
+    color: white;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__style {
+    padding: 10px 30px;
+    background-color: #7D7979;
+
+}
+
+.header, .footer{
+    color: #000;
+}
+
+.header__img{
+    max-height: 80%;
+}
+
+.header__title{
+    font-size: 25px;
+    margin-right: 20px;
+    color: aliceblue;
+
+}
+
+.footer-edit {
+    background-color: #7D7979;
+}
+
+.footer-edit h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.footer span {
+    margin-top: 50px;
+}
+
+
+
+/* Index */
+
+.main__index{
+    padding: 150px 0;
+
+}
+
+.index__title{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(79, 77, 77);
+}
+
+.index__link{
+    display: flex;
+    row-gap: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    background-color: #7D7979;
+    border: 3px solid #6d6969;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.index__link:hover{
+    transform: scale(1.03);
+    -webkit-box-shadow: 4px 9px 15px -3px rgba(109, 105, 105, 0.35); 
+    -moz-box-shadow: 4px 9px 15px -3px rgba(109, 105, 105, 0.35); 
+    box-shadow: 4px 9px 15px -3px rgba(109, 105, 105, 0.35);
+    transition: .5s;
+}
+
+/* Laba #1 */
+
+/* Card */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    row-gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 240px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 36px;
+    transition: .2s ease-out;
+}
+
+.card .card__bg{
+    width: 100%;
+    height: 100%;
+    transition: .2s ease-out;
+    border-radius: 36px;
+    background-color: #000;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: #000;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.card .card__content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38%;
+    transform: translateY(68%);
+    transition: .2s ease-out;
+}
+
+.card:hover .card__content{
+    border-radius: 36px;
+    transform: translateY(0);
+}
+
+.card .card__content .dard_bg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    background: linear-gradient(
+        rgba(0, 0, 0, .4)
+        rgba(0, 0, 0, .9)
+    );
+    filter: blur(20px);
+    transition: .2s ease-out;
+}
+
+.card .card__title{
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.card .card__text{
+    position: absolute;
+    left: 20px;
+    top: 36px;
+    width: 82%;
+    line-height: 20px;
+    word-spacing: -2px;
+    color: #fff;
+    text-align: justify;
+    opacity: 0;
+    transition: .2s ease-out;
+    padding: auto 10px;
+}
+
+.card:hover .card__text{
+    opacity: 1;
+}
+
+
+
+/* Laba #2 */
+
+.body__lab2-1 {
+    position: static;
+}
+
+.form *{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.body__lab2-1 { 
+    background-color: rgb(236, 234, 234);
+
+}
+
+.form__label{
+    margin-bottom: 30px;
+}
+
+.label {
+    font-size: 14px;
+    
+}
+
+.input {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form-parts {
+    display: flex;
+    width: 900px;
+}
+
+.form__legend{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.form__input{
+    margin-top: 20px;
+    border: 2px solid #6d6969;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form__input::placeholder{
+    color: #242424;
+}
+
+.form__select {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.btns__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    background-color: rgba(88, 186, 75, 0.5);
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #101010;
+    margin: 20px;
+}
+
+.link_to_next_page__link{
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+
+.form__comment{
+    resize: none;
+}
+
+.footer__lab2-1 {
+    position: relative;
+}
+
+
+/* Lab 2-2 */
+
+.get-headers__title {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+
+ 
+
+
+
+
+
+
+
