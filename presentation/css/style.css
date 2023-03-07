@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 
 :root {
-    --button-color: #7D7979;
+    --button-color: #682525;
     --text-color: black;
     --text-color1: white;
-    --background-color: #887B71;
-    --background-item-color: #DFD3C3;
+    --background-color: #bb7d6f;
+    --background-item-color: #a4c3bf;
 
 }
 
@@ -81,7 +81,7 @@ body {
     transition-duration: 0.3s;
 }
 .main-info {
-    background-image: url(/src/img/background.png);
+    background-image: url(/presentation/img/fon.jpg);
     width: 99vw;
     height: 100vh;
     background-size: cover;
